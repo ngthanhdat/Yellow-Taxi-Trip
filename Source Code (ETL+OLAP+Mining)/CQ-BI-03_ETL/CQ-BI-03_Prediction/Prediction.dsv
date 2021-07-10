@@ -1,0 +1,89 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="277a3697-0b0b-4462-967b-9ec0632bf29b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Prediction</ID>
+  <Name>Prediction</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Prediction</DataSourceID>
+  <Schema>
+    <xs:schema id="Prediction" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Prediction" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="535d399f-3f76-415c-a083-eabf837aafbc">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_dm_Count_Trips_Month" msprop:design-time-name="988d0978-0891-4d3d-b009-c41f5d0eae06" msprop:DbTableName="dm_Count_Trips_Month" msprop:FriendlyName="dm_Count_Trips_Month" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Count_Trips_Month" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6e2c58eb-37e9-4bb9-8b04-bc9798c32420" msprop:DbColumnName="Count_Trips_Month" msprop:FriendlyName="Count_Trips_Month" type="xs:int" />
+                  <xs:element name="Vendor_Name" msprop:design-time-name="50d3ec9d-2b10-47ee-b43c-7f31304fe791" msprop:DbColumnName="Vendor_Name" msprop:FriendlyName="Vendor_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="District_Name" msprop:design-time-name="0673ea79-a952-4c12-87a6-82a0800a9aa8" msprop:DbColumnName="District_Name" msprop:FriendlyName="District_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Location_Name" msprop:design-time-name="994ca02a-f39e-4bdf-88ca-e8ad46873be6" msprop:DbColumnName="Location_Name" msprop:FriendlyName="Location_Name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Year_key" msprop:design-time-name="8bdd8f68-ea54-4479-8447-48f569d1d478" msprop:DbColumnName="Year_key" msprop:FriendlyName="Year_key" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month_key" msprop:design-time-name="e26b887e-3a3f-4417-8b79-0d02e656c3cd" msprop:DbColumnName="Month_key" msprop:FriendlyName="Month_key" type="xs:int" minOccurs="0" />
+                  <xs:element name="Count_pickup" msprop:design-time-name="f9b3b747-1b35-4366-926a-eab0c1a6bb50" msprop:DbColumnName="Count_pickup" msprop:FriendlyName="Count_pickup" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dm_Count_Trips_Month" />
+          <xs:field xpath="Count_Trips_Month" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <Prediction xmlns="" />
+  </Schema>
+</DataSourceView>
